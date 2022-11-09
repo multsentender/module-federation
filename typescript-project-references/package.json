@@ -1,0 +1,20 @@
+{
+  "name": "react-pr-case",
+  "scripts": {
+    "install": "npm i ./host && npm i ./remote",
+    "start": "concurrently \"(npm start --prefix ./host)\" \"(npm start --prefix ./remote)\" "
+  },
+  "workspaces": {
+    "packages": [
+      "libs",
+      "host",
+      "remote"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "host": "file:host",
+    "remote": "file:remote",
+    "libs": "file:libs"
+  }
+}
