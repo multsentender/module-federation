@@ -4,8 +4,5 @@
     "strict": true,
     "jsx": "react",
     "esModuleInterop": true,
-    "paths": {
-      "app2/*": ["./app2/src/*"]
-    }
   }
 }
