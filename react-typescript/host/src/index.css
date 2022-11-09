@@ -1,0 +1,42 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.app{
+  min-height: 100vh;
+  width: 100%;
+  border: 3px dashed tomato;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.app::before{
+  content: 'Host';
+  position: absolute;
+  color: tomato;
+  text-transform: uppercase;
+  top: 20px;
+  right: 30px;
+  font-size: 1.4em;
+}
+
+.app__titles{
+  text-align: center;
+}
+
+.todos{
+  max-width: 400px;
+  display: grid;
+  gap: 25px;
+  width: 100%;
+}

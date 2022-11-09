@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "install": "npm i ./host && npm i ./remote",
+    "start": "concurrently \"(npm start --prefix ./host)\" \"(npm start --prefix ./remote)\" "
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "host": "file:host",
+    "remote": "file:remote"
+  }
+}
