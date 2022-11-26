@@ -3,5 +3,11 @@
   "include": ["src"],
   "references": [
     { "path": "../remote" }
-  ]
+  ],
+  "compilerOptions": {
+    "paths": {
+      "remote/*": ["../remote/src/*"],
+      "libs/*": ["../libs/*"]
+    }
+  }
 }

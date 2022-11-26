@@ -3,10 +3,6 @@
     "sourceMap": true,
     "strict": true,
     "jsx": "react",
-    "composite": true,
     "esModuleInterop": true,
-    "paths": {
-      "libs/*": ["./libs/*"]
-    }
   }
 }

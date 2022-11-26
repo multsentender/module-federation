@@ -2,7 +2,7 @@
   "name": "react-pr-case",
   "scripts": {
     "install": "npm i ./host && npm i ./remote",
-    "start": "concurrently \"(npm start --prefix ./host)\" \"(npm start --prefix ./remote)\" "
+    "start": "concurrently \"(npm start --prefix ./libs)\" \"(npm start --prefix ./host)\" \"(npm start --prefix ./remote)\" "
   },
   "workspaces": {
     "packages": [
